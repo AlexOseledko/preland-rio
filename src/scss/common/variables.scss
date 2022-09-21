@@ -1,20 +1,27 @@
 $theme-colors: (
-  primary:       $yellow-500,
-  secondary:     $gray-600,
-  success:       $green,
+  primary:       #f4007e,
+  secondary:     #eee,
+  success:       #7bb745,
   info:          $cyan,
   warning:       $yellow,
   danger:        $red,
-  light:         $gray-100,
-  dark:          $gray-900,
+  light:         #fff,
+  dark:          #000,
 );
 
-$accent-color: #ffc720;
-$link-color: #ffc720;
-$link-hover-color: #f7d676;
+$accent-color: #f4007e;
+$accent-hover-color: #7bb745;
+$text-color-onaccent: #fff;
 
-$modal-bg: #090033;
-$nav-bg: #4c0079;
+$link-color: #f4007e;
+$link-hover-color: #323232;
 
-$fast: 0.3s;
-$slow: 0.5s;
+// $modal-bg: #090033;
+// $nav-bg: #4c0079;
+
+$fast: 0.2s;
+$slow: 0.4s;
+
+:root{
+  --swiper-theme-color: #323232;
+}

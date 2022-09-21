@@ -1,0 +1,112 @@
+// Lazyload
+.fade-box .lazyload,
+.fade-box .lazyloading {
+    opacity: 0;
+    transition: opacity 400ms;
+}
+
+.fade-box img.lazyloaded {
+    opacity: 1;
+}
+
+// Swiper
+.slider {
+    // box-sizing: content-box;
+    width: 100%;
+    // width: calc(100% - 200px);
+    padding: 24px 48px;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background: #fff;
+        width: 36px;
+        height: 60px;
+    }
+
+    .swiper-button-prev {
+        left: 0;
+    }
+
+    .swiper-button-next {
+        right: 0;
+    }
+}
+
+
+// Theme
+a,
+a:hover {
+    text-decoration: none;
+    transition: color ease $fast;
+}
+
+.btn {
+    border-radius: 0;
+    transition: background-color ease $fast;
+}
+
+.btn-theme-primary {
+    background: $accent-color;
+    color: $text-color-onaccent;
+
+    &:hover {
+        background: $accent-hover-color;
+    }
+}
+
+
+// content
+.header {
+    background: #000000;
+    // background-attachment: fixed;
+    // background-size: auto 50vh;
+    // background-position: center 0;
+    height: 50vh;
+    max-height: 1440px;
+    overflow: hidden;
+}
+
+.header-nav {
+    position: relative;
+    z-index: 5;
+    background: rgba($color: #000000, $alpha: 0.64);
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.bg-img-wrap {
+    z-index: 0;
+    height: 50vh;
+    max-height: 1440px;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.content{
+    position: relative;
+    z-index: 2;
+}
+
+.review-slider .avatar{
+    width: 44px;
+    height: 44px;
+}
+
+.brands{
+    img{
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+        object-position: center;
+    }
+}
