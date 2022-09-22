@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('modules/head.html', {
+'title': ''
+})
+
+<body class="bg-secondary">
+<div class="page h-100vh">
+  <div>
+  @@include('modules/header-light.html', {})
+    <main>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-md-8 offset-md-2 bg-white my-lg-5 shadow position-relative text-center">
+
+            <div class="modal-container modal-bg rounded px-3 py-5 px-lg-4">
+
+              <div class="row">
+                <div class="col d-flex justify-content-center mt-3 mb-5">
+                  <img class="img-fluid" width="200" src="./images/logo-dark.svg" alt="">
+                </div>
+              </div>
+
+              <h1 class="text-primary display-1 fw-normal text-uppercase mb-3">
+                thank you!
+              </h1>
+              <h2>
+                Your registraition will be soon aproved by our admin We will notify you via email
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  @@include('modules/footer.html', {})
+
+</div>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

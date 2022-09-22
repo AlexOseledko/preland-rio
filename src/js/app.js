@@ -79,16 +79,46 @@ const reviewSlider = new Swiper('.review-slider', {
 });
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
-const links = document.querySelectorAll('a[href="#"]');
+(function init100vh() {
+    function setHeight() {
+        var vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+    setHeight();
+    window.addEventListener('resize', setHeight);
+})();
 
-links.forEach( l => {
-    l.addEventListener('click', e => {
-        e.preventDefault();
-        console.log('click offer');
-        fbq('track', 'Lead');
-        location.href
+(function () {
+    const links = document.querySelectorAll('a[href="#"]');
+    links.forEach(l => {
+        l.addEventListener('click', e => {
+            e.preventDefault();
+            location.href = './register.html'
+        })
     })
-})
+})();
+
+
+(function sendForm() {
+    const form = document.querySelector('#main-form');
+    if (!form) return;
+
+    const preloader = document.querySelector('.preloader');
+    const inputs = form.querySelectorAll('*');
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+
+        inputs.forEach(el => {
+            el.setAttribute('disbled', 'disbled');
+        })
+        preloader.classList.add('active');
+
+        setTimeout(() => {
+            location.href = './success.html'
+        }, 800);
+    })
+})();
 
