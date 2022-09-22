@@ -11,15 +11,14 @@
 }
 
 // Swiper
-.slider {
-    // box-sizing: content-box;
+.slider.gallery-slider,
+    .slider.review-slider {
     width: 100%;
-    // width: calc(100% - 200px);
     padding: 24px 48px;
 
     .swiper-button-prev,
     .swiper-button-next {
-        background: #fff;
+        background: #000;
         width: 36px;
         height: 60px;
     }
@@ -31,7 +30,20 @@
     .swiper-button-next {
         right: 0;
     }
+
 }
+
+.slider.gallery-small-slider{
+    overflow: hidden;
+    // .swiper-button-prev,
+    // .swiper-button-next {
+    //     background: #fff;
+    //     width: 36px;
+    //     height: 60px;
+    //     top: 42%;
+    // }
+}
+
 
 
 // Theme
@@ -94,9 +106,6 @@ a.link.link-theme-light {
 // content
 .header {
     background: #000000;
-    // background-attachment: fixed;
-    // background-size: auto 50vh;
-    // background-position: center 0;
     height: 50vh;
     max-height: 1440px;
     overflow: hidden;
@@ -106,6 +115,10 @@ a.link.link-theme-light {
     position: relative;
     z-index: 5;
     background: rgba($color: #000000, $alpha: 0.64);
+}
+
+.header-light .header-nav{
+    background: #000 !important;
 }
 
 .navbar-toggler,
@@ -131,7 +144,7 @@ a.link.link-theme-light {
 
 .content {
     position: relative;
-    z-index: 2;
+    z-index: 100;
 }
 
 .review-slider .avatar {
@@ -145,5 +158,22 @@ a.link.link-theme-light {
         height: 80%;
         object-fit: contain;
         object-position: center;
+    }
+}
+
+.promo{
+    background: url(../images/casino/p.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 60%;
+}
+
+
+@include media-breakpoint-up(lg){
+    .header,
+    .bg-img-wrap {
+
+        height: 75vh;
+
     }
 }

@@ -12,7 +12,6 @@ flsFunctions.isWebp();
 
 const gallerySlider = new Swiper('.gallery-slider', {
     modules: [Navigation],
-    loop: true,
     navigation: {
         nextEl: '.gallery-slider .swiper-button-next',
         prevEl: '.gallery-slider .swiper-button-prev',
@@ -24,6 +23,29 @@ const gallerySlider = new Swiper('.gallery-slider', {
         },
         640: {
             slidesPerView: 2,
+            spaceBetween: 16
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 16
+        }
+    }
+});
+
+const gallerySmallSlider = new Swiper('.gallery-small-slider', {
+    modules: [Navigation],
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        200: {
+            slidesPerView: 3,
+            spaceBetween: 16
+        },
+        640: {
+            slidesPerView: 3,
             spaceBetween: 16
         },
         992: {
@@ -59,21 +81,14 @@ const reviewSlider = new Swiper('.review-slider', {
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-// (function stickBtnToggle() {
-//     const apperBtn = document.querySelector('.apper-btn');
-//     const className = 'show';
-//     const position = 1000;
+const links = document.querySelectorAll('a[href="#"]');
 
-//     if (!apperBtn) return;
-
-//     function toggleFunc() {
-//         if (scrollY >= position) apperBtn.classList.add(className);
-//         else apperBtn.classList.remove(className);
-//     }
-
-//     toggleFunc();
-//     window.addEventListener('scroll', toggleFunc);
-// })();
-
-
+links.forEach( l => {
+    l.addEventListener('click', e => {
+        e.preventDefault();
+        console.log('click offer');
+        fbq('track', 'Lead');
+        location.href
+    })
+})
 
