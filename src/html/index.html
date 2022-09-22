@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('modules/head.html', { 'title': 'Aladdin`s Treasure' })
+@@include('modules/head.html', {
+'title': ''
+})
 
 <body>
 
-  @@include('modules/header.html', {})
+  @@include('modules/header.html', {
+  'mainImg': './images/header-bg.jpg'
+  })
 
-  <div class="content">
+  <div class="content"> 
 
+    <div class="content-box bg-white py-4 text-center text-white" style="background: #222 !important">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12">
+            <h2>Peermont Central Reservations</h2>
+          </div>
+          <div class="col-12">
+            <p class="fs-5 fw-light">
+              Conveniently check <strong> best available prices </strong> , reservations and room availability online.
+            </p>
+          </div>
+          <div class="col-12 col-md-auto">
+            <a href="#" class="btn btn-lg btn-primary text-white w-100">Book Here</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div class="content-box bg-light py-4">
+    <div class="content-box bg-white py-4">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-6 text-center text-md-start my-3">
@@ -17,7 +38,7 @@
 
           </div>
           <div class="col-12 col-md-6 fs-5 bg-white">
-            <p>
+            <p class="fs-5 fw-light">
               Inspired by the passion, vibrance and colour of the Carnival in Rio de Janeiro,
               <strong>Rio Hotel, Casino and Convention Resort</strong>
               shines brightly in Klerksdorp along the N12 in the North West province of South Africa. This glitzy resort
@@ -39,9 +60,9 @@
                   <img data-src="./images/gs-1.jpg" class="lazyload fade-box " alt="slide-img">
                   <div class="card-body text-center">
                     <h4 class="card-title text-uppercase ">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    <p class="card-text fs-5 fw-light">Some quick example text to build on the card title and make up the bulk of the
                       card's content.</p>
-                    <a href="#" class="btn btn-lg btn-dark text-light w-100">More</a>
+                    <a href="#" class="btn btn-lg btn-dark text-white w-100">More</a>
                   </div>
                 </div>
               </div>
@@ -51,9 +72,9 @@
                   <img data-src="./images/gs-1.jpg" class="lazyload fade-box " alt="slide-img">
                   <div class="card-body text-center">
                     <h4 class="card-title text-uppercase ">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    <p class="card-text fs-5 fw-light">Some quick example text to build on the card title and make up the bulk of the
                       card's content.</p>
-                    <a href="#" class="btn btn-lg btn-dark text-light w-100">Go somewhere</a>
+                    <a href="#" class="btn btn-lg btn-dark text-white w-100">Go somewhere</a>
                   </div>
                 </div>
               </div>
@@ -63,9 +84,9 @@
                   <img data-src="./images/gs-1.jpg" class="lazyload fade-box " alt="slide-img">
                   <div class="card-body text-center">
                     <h4 class="card-title text-uppercase ">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    <p class="card-text fs-5 fw-light">Some quick example text to build on the card title and make up the bulk of the
                       card's content.</p>
-                    <a href="#" class="btn btn-lg btn-dark text-light w-100">Go somewhere</a>
+                    <a href="#" class="btn btn-lg btn-dark text-white w-100">Go somewhere</a>
                   </div>
                 </div>
               </div>
@@ -78,7 +99,7 @@
       </div>
     </div>
 
-    <div class="content-box bg-light py-4">
+    <div class="content-box bg-white py-4">
       <div class="container">
         <div class="row align-items-center d-flex">
 
@@ -88,10 +109,10 @@
 
           <div class="col-12 col-md-6 text-center text-md-start my-3 order-md-1">
             <h2 class="display-5 fw-semibold text-primary">The Beef Baron Grill House</h2>
-            <p class="fs-5">Enjoy a culinary experience fit for the finest palate.</p>
+            <p class="fs-5 fw-light">Enjoy a culinary experience fit for the finest palate.</p>
             <div class="row">
               <div class="col-12 col-md-auto">
-                <a href="#" class="btn btn-lg btn-dark text-light w-100">More</a>
+                <a href="#" class="btn btn-lg btn-dark text-white w-100">More</a>
               </div>
             </div>
           </div>
@@ -107,7 +128,7 @@
           <div class="col-12 col-md-6">
             <img class="img-fluid my-4" src="./images/gs-1.jpg" alt="The Beef Baron Grill House">
             <h4 class="text-primary my-3 fw-normal">One Card All the Rewards</h4>
-            <p class="fs-5">
+            <p class="fs-5 fw-light">
               It’s more than an ordinary rewards programme. Get discounts on hotel stays, meals and invitations to the
               most exciting gaming promotions. Access it now on our Rewards App. One card, all the Rewards.
               <a href="#" class="link">SIGN UP</a>
@@ -117,7 +138,7 @@
           <div class="col-12 col-md-6">
             <img class="img-fluid my-4" src="./images/gs-1.jpg" alt="The Beef Baron Grill House">
             <h4 class="text-primary my-3 fw-normal">One Card All the Rewards</h4>
-            <p class="fs-5">
+            <p class="fs-5 fw-light">
               It’s more than an ordinary rewards programme. Get discounts on hotel stays, meals and invitations to the
               most exciting gaming promotions. Access it now on our Rewards App. One card, all the Rewards.
               <a href="#" class="link">SIGN UP</a>
@@ -128,14 +149,14 @@
       </div>
     </div>
 
-    <div class="content-box bg-light py-4">
+    <div class="content-box bg-white py-4">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <h2 class="display-5 fw-semibold text-primary">Follow Us</h2>
           </div>
           <div class="col-12 col-md-6 my-4">
-            <a href="#" class="btn btn-lg btn-primary text-light w-100  mb-3">Facebook</a>
+            <a href="#" class="btn btn-lg btn-primary text-white w-100  mb-3">Facebook</a>
             <a href="#">
               <h4 class="fw-normal">Rio Hotel Casino Convention Resort</h4>
             </a>
@@ -182,7 +203,7 @@
           </div>
 
           <div class="col-12 col-md-6 my-4">
-            <a href="#" class="btn btn-lg btn-primary text-light w-100 mb-3">YouTube</a>
+            <a href="#" class="btn btn-lg btn-primary text-white w-100 mb-3">YouTube</a>
             <div class="ratio ratio-16x9">
               <iframe src="https://www.youtube.com/embed/levrGSmWL5I" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -226,21 +247,21 @@
       </div>
     </div>
 
-    <div class="content-box review overflow-hidden bg-light py-3">
+    <div class="content-box review overflow-hidden bg-white py-3">
       <div class="container">
         <div class="row position-relative ">
           <div class="slider review-slider position-relative mx-auto">
             <div class="swiper-wrapper">
               <!-- Slides -->
 
-              <div class="swiper-slide align-self-stretch">
+              <div class="swiper-slide">
                 <div class="card bg-secondary h-100 border-0">
                   <div class="card-body py-4">
                     <div class="row ">
                       <div class="col-auto">
                         <div
                           class="avatar d-flex mb-4 bg-success justify-content-center align-items-center rounded-circle">
-                          <span class="fs-4 fw-semibold text-light">
+                          <span class="fs-4 fw-semibold text-white">
                             S
                           </span>
                         </div>
@@ -293,7 +314,7 @@
                       <div class="col-auto">
                         <div
                           class="avatar d-flex mb-4 bg-info justify-content-center align-items-center rounded-circle">
-                          <span class="fs-4 fw-semibold text-light">
+                          <span class="fs-4 fw-semibold text-white">
                             T
                           </span>
                         </div>
@@ -345,7 +366,7 @@
                       <div class="col-auto">
                         <div
                           class="avatar d-flex mb-4 bg-warning justify-content-center align-items-center rounded-circle">
-                          <span class="fs-4 fw-semibold text-light">
+                          <span class="fs-4 fw-semibold text-white">
                             V
                           </span>
                         </div>
@@ -397,7 +418,7 @@
                       <div class="col-auto">
                         <div
                           class="avatar d-flex mb-4 bg-success justify-content-center align-items-center rounded-circle">
-                          <span class="fs-4 fw-semibold text-light">
+                          <span class="fs-4 fw-semibold text-white">
                             N
                           </span>
                         </div>
@@ -450,7 +471,7 @@
                       <div class="col-auto">
                         <div
                           class="avatar d-flex mb-4 bg-info justify-content-center align-items-center rounded-circle">
-                          <span class="fs-4 fw-semibold text-light">
+                          <span class="fs-4 fw-semibold text-white">
                             S
                           </span>
                         </div>
@@ -504,11 +525,11 @@
             <strong>
               Trustindex
             </strong>
-              rating score:
+            rating score:
             <strong>
               4.0
             </strong>
-              of 5,based on
+            of 5,based on
             <a href="strong" class="link">
               1875 reviews</a>.
           </p>
@@ -516,61 +537,61 @@
       </div>
     </div>
 
-    <div class="content-box review bg-primary text-light py-2">
+    <div class="content-box review bg-primary text-white py-2">
       <h5 class="text-center">
         RIO HOTEL AND SLOTS ARE OPEN 24 HOURS A DAY 365 DAYS A YEAR
       </h5>
     </div>
-    
-    <div class="content-box review bg-dark text-light py-3">
+
+    <div class="content-box review bg-black text-white py-3">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4 text-center">
             <img src="./images/brand-main.svg" alt="" class="img-fluid">
-            <h6 class="mt-3"> 
+            <h6 class="mt-3">
               CONNECT WITH US
             </h6>
             <br>
-            <a href="#" class="link">Tel +27 (0)18 469 9100</a>  
+            <a href="#" class="link">Tel +27 (0)18 469 9100</a>
             <br>
-            <a href="#" class="link">Email: info@riocasino.co.za</a>  
+            <a href="#" class="link">Email: info@riocasino.co.za</a>
             <br>
-            <a href="#" class="link">Subscribe to our Newsletter</a>  
+            <a href="#" class="link">Subscribe to our Newsletter</a>
           </div>
           <div class="col-md-8 d-none d-md-block overflow-hidden brands">
             <div class="row overflow-hidden">
               <div class="col-3 text-center my-1">
-                <img  src="./images/brand-1.svg" alt="">
+                <img src="./images/brand-1.svg" alt="">
               </div>
               <div class="col-3 text-center my-1">
-                <img  src="./images/brand-2.svg" alt="">
+                <img src="./images/brand-2.svg" alt="">
               </div>
               <div class="col-3 text-center my-1">
-                <img  src="./images/brand-3.svg" alt="">
+                <img src="./images/brand-3.svg" alt="">
               </div>
               <div class="col-3 text-center my-1">
-                <img  src="./images/brand-4.svg" alt="">
+                <img src="./images/brand-4.svg" alt="">
               </div>
               <div class="col-3 text-center my-1">
-                <img  src="./images/brand-9.svg" alt="">
+                <img src="./images/brand-9.svg" alt="">
               </div>
               <div class="col-3 text-center my-1">
-                <img  src="./images/brand-10.svg" alt="">
+                <img src="./images/brand-10.svg" alt="">
               </div>
               <div class="col-3 text-center my-1">
-                <img  src="./images/brand-7.svg" alt="">
+                <img src="./images/brand-7.svg" alt="">
               </div>
               <div class="col-3 text-center my-1">
-                <img  src="./images/brand-8.svg" alt="">
+                <img src="./images/brand-8.svg" alt="">
               </div>
               <div class="col-4 text-center my-1">
-                <img  src="./images/brand-5.svg" alt="">
+                <img src="./images/brand-5.svg" alt="">
               </div>
               <div class="col-4 text-center my-1">
-                <img  src="./images/brand-6.svg" alt="">
+                <img src="./images/brand-6.svg" alt="">
               </div>
               <div class="col-4 text-center my-1">
-                <img  src="./images/brand-11.svg" alt="">
+                <img src="./images/brand-11.svg" alt="">
               </div>
             </div>
           </div>
@@ -579,19 +600,6 @@
     </div>
 
   </div>
-
-  <div class="content-box text-light py-3" style="background: #4c4c4c;">
-    <div class="container">
-      <div class="row">
-        <p class="fs-5 text-center">RIO CASINO IS A PEERMONT RESORT
-          <br>
-        <strong>PEERMONT PROUDLY SUPPORTS RESPONSIBLE GAMBLING</strong>
-        <br>
-        SA: Problem Gambling Toll-Free Help Line 0800 006 008. Players must be 18 years or older. Winners know when to stop.</p>
-      </div>
-    </div>
-  </div>
-
 
   @@include('modules/footer.html', {})
 

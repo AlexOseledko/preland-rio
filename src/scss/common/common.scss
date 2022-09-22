@@ -3,6 +3,7 @@
 .fade-box .lazyloading {
     opacity: 0;
     transition: opacity 400ms;
+    background: #000;
 }
 
 .fade-box img.lazyloaded {
@@ -34,10 +35,45 @@
 
 
 // Theme
+
+.hover-scale {
+    transform: scale(1) !important;
+    transition: transform ease $slow !important;
+    &:hover {
+        transform: scale(1.04) !important;
+    }
+}
+
+.hover-up,
+.btn {
+    transform: translateY(0px) !important;
+    transition: transform ease $slow !important;
+    &:hover {
+        transform: translateY(-8px) !important;
+    }
+}
+
 a,
 a:hover {
     text-decoration: none;
     transition: color ease $fast;
+}
+
+a.link.link-theme-light {
+    color: #ffd0e6;
+
+    &:hover {
+        color: #fff;
+    }
+
+    &::after {
+        color: #ffd0e6;
+        content: " | ";
+    }
+
+    &:last-child::after {
+        content: "";
+    }
 }
 
 .btn {
@@ -92,18 +128,19 @@ a:hover {
     object-fit: cover;
     object-position: center;
 }
-.content{
+
+.content {
     position: relative;
     z-index: 2;
 }
 
-.review-slider .avatar{
+.review-slider .avatar {
     width: 44px;
     height: 44px;
 }
 
-.brands{
-    img{
+.brands {
+    img {
         width: 80%;
         height: 80%;
         object-fit: contain;

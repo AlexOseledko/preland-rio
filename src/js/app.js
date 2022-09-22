@@ -12,7 +12,7 @@ flsFunctions.isWebp();
 
 const gallerySlider = new Swiper('.gallery-slider', {
     modules: [Navigation],
-    // loop: true,
+    loop: true,
     navigation: {
         nextEl: '.gallery-slider .swiper-button-next',
         prevEl: '.gallery-slider .swiper-button-prev',
