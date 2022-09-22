@@ -169,6 +169,10 @@ a.link.link-theme-light {
     background-position: center;
 }
 
+.footer{
+    z-index: 100;
+}
+
 
 @include media-breakpoint-up(lg){
     .header,
