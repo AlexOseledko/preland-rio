@@ -163,9 +163,10 @@ a.link.link-theme-light {
 
 .promo{
     background: url(../images/casino/p.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 60%;
+    background-position: center;
 }
 
 
